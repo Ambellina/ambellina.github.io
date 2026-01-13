@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://ambellina.github.io/style-guide">
+    <title>Style Guide | My Journal</title>
+    <meta name="description" content="The Amazing Adventures of Amber + Family" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Style Guide | My Journal" />
+    <meta property="og:site_name" content="My Journal" />
+    <meta property="og:description" content="The Amazing Adventures of Amber + Family" />
+    <meta property="og:url" content="https://ambellina.github.io/style-guide">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://ambellina.github.io/assets/images/flickr/graffiti.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="Style Guide | My Journal">
+    <meta name="twitter:description" content="The Amazing Adventures of Amber + Family">
+    <meta name="twitter:site" content="@false">
+    <meta name="twitter:card"  content="summary_large_image">
+    <meta name="twitter:image" content="https://ambellina.github.io/assets/images/flickr/graffiti.jpg">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "url": "https://ambellina.github.io/style-guide",
+      "name": "Style Guide",
+      "headline": "Style Guide",
+      "keywords": "",
+      "description": "The Amazing Adventures of Amber + Family",
+      
+      "author": {
+        "@type": "Person",
+        "name": "Amber Tosh",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ambellina.github.io"
+        }
+      },
+      
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ambellina.github.io/style-guide"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ambellina.github.io/assets/images/flickr/graffiti.jpg"
+      }
+    }
+    </script>
+
+    
+    <!-- Site Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ambellina.github.io/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ambellina.github.io/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ambellina.github.io/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="https://ambellina.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://ambellina.github.io/assets/images/safari-pinned-tab.svg" color="#f66904">
+    <meta name="apple-mobile-web-app-title" content="peter.dolkens.me">
+    <meta name="application-name" content="peter.dolkens.me">
+    <meta name="msapplication-TileColor" content="#f66904">
+    <meta name="theme-color" content="#f66904">
+
+    <!-- Font Embed Code -->
+    <link href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic&display=swap" rel="stylesheet" type="text/css" />
+
+    <!-- CSS Styles -->
+    <link href="https://ambellina.github.io/assets/css/style.css?v=202601131240100000" rel="stylesheet">
+
+</head>
+
+<body class="home-template">
+
+    
+    <!-- Password Protection -->
+<style>
+    #password-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #1a1a2e;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Lato', sans-serif;
+    }
+    #password-overlay .password-box {
+        background: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    #password-overlay h2 {
+        margin: 0 0 10px 0;
+        color: #333;
+        font-family: 'Playfair Display', serif;
+    }
+    #password-overlay p {
+        color: #666;
+        margin: 0 0 25px 0;
+    }
+    #password-overlay input[type="password"] {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 16px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        transition: border-color 0.2s;
+    }
+    #password-overlay input[type="password"]:focus {
+        outline: none;
+        border-color: #f66904;
+    }
+    #password-overlay button {
+        background: #f66904;
+        color: #fff;
+        border: none;
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+    #password-overlay button:hover {
+        opacity: 0.9;
+    }
+    #password-overlay .error {
+        color: #e74c3c;
+        margin-top: 10px;
+        display: none;
+    }
+    .site-hidden {
+        display: none !important;
+    }
+</style>
+
+<div id="password-overlay">
+    <div class="password-box">
+        <h2>Welcome</h2>
+        <p>This site is password protected.</p>
+        <form id="password-form">
+            <input type="password" id="site-password" placeholder="Enter password" autocomplete="off" autofocus>
+            <button type="submit">Enter</button>
+            <p class="error" id="password-error">Incorrect password. Please try again.</p>
+        </form>
+    </div>
+</div>
+
+<script>
+(function() {
+    var SITE_PASSWORD = 'cherry5Chipper';
+    var COOKIE_NAME = 'site_authenticated';
+    var COOKIE_DAYS = 30;
+    var DEBUG = true;
+
+    function log(message) {
+        if (DEBUG) {
+            console.log('[Password Protection] ' + message);
+        }
+    }
+
+    function setCookie(name, value, days) {
+        var expires = '';
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = '; expires=' + date.toUTCString();
+        }
+        document.cookie = name + '=' + value + expires + '; path=/; SameSite=Strict';
+        log('Cookie set: ' + name + '=' + value + ', expires in ' + days + ' days');
+    }
+
+    function getCookie(name) {
+        var nameEQ = name + '=';
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var c = cookies[i].trim();
+            if (c.indexOf(nameEQ) === 0) {
+                var value = c.substring(nameEQ.length);
+                log('Cookie found: ' + name + '=' + value);
+                return value;
+            }
+        }
+        log('Cookie not found: ' + name);
+        return null;
+    }
+
+    function deleteCookie(name) {
+        document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+        log('Cookie deleted: ' + name);
+    }
+
+    log('Initializing password protection...');
+    log('Expected password length: ' + SITE_PASSWORD.length + ' characters');
+
+    // Check if already authenticated via cookie
+    if (getCookie(COOKIE_NAME) === 'true') {
+        log('User already authenticated via cookie - granting access');
+        document.getElementById('password-overlay').style.display = 'none';
+        return;
+    }
+
+    log('No valid authentication found - showing password prompt');
+
+    function initProtection() {
+        var pageEl = document.getElementById('page');
+        if (pageEl) {
+            log('Found #page element - hiding content');
+            pageEl.classList.add('site-hidden');
+        } else {
+            log('Warning: #page element not found');
+        }
+
+        document.getElementById('password-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var entered = document.getElementById('site-password').value;
+            log('Password attempt - entered length: ' + entered.length + ' characters');
+
+            if (entered === SITE_PASSWORD) {
+                log('Password correct - setting cookie and granting access');
+                setCookie(COOKIE_NAME, 'true', COOKIE_DAYS);
+                document.getElementById('password-overlay').style.display = 'none';
+                if (pageEl) {
+                    pageEl.classList.remove('site-hidden');
+                }
+            } else {
+                log('Password incorrect - access denied');
+                document.getElementById('password-error').style.display = 'block';
+                document.getElementById('site-password').value = '';
+                document.getElementById('site-password').focus();
+            }
+        });
+    }
+
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+        log('DOM not ready - waiting for DOMContentLoaded');
+        document.addEventListener('DOMContentLoaded', initProtection);
+    } else {
+        log('DOM already ready - initializing immediately');
+        initProtection();
+    }
+})();
+</script>
+
+    
+
+    <div id="page" class="site">
+
+        
+        <header class="site-header">
+
+    
+    <h1 class="site-title" style="margin-top: 1em">
+      <a href="https://ambellina.github.io" rel="home">
+        <svg viewBox="0 0 100 100" height="4em" width="4em" style="float: left; margin-top: -1.1em">
+          <title></title>
+          <use xlink:href="https://ambellina.github.io/assets/images/branding.svg#logo" />
+        </svg>
+        My Journal
+      </a>
+    </h1>
+    
+
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->
+
+        
+        
+
+        <main class="site-main">
+    <div class="site-content">
+        <article class="page-template">
+
+            <header class="cover post-header">
+                <div class="cover-bg" style="background-image: url(https://ambellina.github.io/assets/images/flickr/graffiti.jpg)">
+                </div>
+
+                <div class="cover-content">
+                    <div class="inner">
+                        <h1 class="post-title">Style Guide</h1>
+                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+            </header><!-- .post-header -->
+
+            <div class="inner">
+                <div class="post-content">
+                    <p>The style guide provides you with a blueprint of Subtle default post and page styles. The style guide is also a great reference for suggested typographic treatment and styles for your content.</p>
+
+<h2 id="images">Images</h2>
+
+<p>This theme supports <strong>regular image with or without caption</strong>, <strong>wide images with or without caption</strong> and <strong>full-width images with or without the caption</strong>. The examples provided below.</p>
+
+<figure class="kg-card kg-image-card">
+    
+    <img src="/assets/images/flickr/hex-tiles.jpg" alt="Concrete roads" />
+    
+    
+        <figcaption class="caption-text">This regular image with caption</figcaption> 
+    
+</figure>
+
+<figure class="kg-card kg-image-card full-width">
+    <img src="/assets/images/flickr/opera-house.jpg" alt="Wide image with caption" />
+    
+    <figcaption class="caption-text">This wide image with caption</figcaption>
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-width-full">
+    <img src="/assets/images/flickr/black-waves.jpg" alt="Full-width image with caption" class="kg-image" />
+    
+    <figcaption class="caption-text">This full-width image with caption</figcaption>
+    
+</figure>
+
+<p>One neat trick which you can use in Markdown to distinguish between different types of images is to add a #hash value to the end of the source URL, and then target images containing the hash with special styling. For example, to add a wider image, you need to add the #wide value to the end of the source URL.</p>
+
+<h2 id="align-image-left">Align Image Left</h2>
+
+<div class="alignleft">
+	<img src="/assets/images/flickr/warsaw-bridge.jpg" alt="left" />
+</div>
+
+<p>One neat trick which you can use in Markdown to distinguish between different types of images is to add a #hash value to the end of the source URL, and then target images containing the hash with special styling. For example, to add a wider image, you need to add the #wide value to the end of the source URL.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tincidunt turpis ac fringilla. Mauris eget dolor neque. Donec ac ex quis lectus sagittis vestibulum.</p>
+
+<p>Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat.</p>
+
+<h2 id="align-image-right">Align Image Right</h2>
+
+<div class="alignright">
+	<img src="/assets/images/flickr/melbourne.jpg" alt="left" />
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero.</p>
+
+<h1 id="this-is-an-h1">This is an H1</h1>
+
+<p><mark>Quisque facilisis erat a dui</mark>. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis.</p>
+
+<h2 id="this-is-an-h2">This is an H2</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero.</p>
+
+<h3 id="this-is-an-h3">This is an H3</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero.</p>
+
+<h4 id="this-is-an-h4">This is an H4</h4>
+
+<p>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis.</p>
+
+<h2 id="quoting">Quoting</h2>
+
+<p>Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero.</p>
+
+<blockquote>
+  <p>“Creativity is allowing yourself to make mistakes. Design is knowing which ones to keep.” <cite>― Scott Adams ―</cite></p>
+</blockquote>
+
+<p>Lorem ipsum dolor sit amet, <code class="highlighter-rouge">consectetuer adipiscing</code> elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero.</p>
+
+<hr />
+
+<h2 id="code-blocks">Code Blocks</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Simple map
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
+}
+</code></pre></div></div>
+
+<p>Code blocks, highlighted with <a href="http://prismjs.com/index.html">Prism</a>.</p>
+
+<pre><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;Prism&lt;/title&gt;
+	&lt;link rel="stylesheet" href="style.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;header&gt;
+		&lt;div class="intro" data-src="templates/header-main.html" data-type="text/html"&gt;&lt;/div&gt;
+		&lt;ul id="features"&gt;
+			&lt;li&gt;Dead simple&lt;/li&gt;
+			&lt;li&gt;Light as a feather&lt;/li&gt;
+			&lt;li&gt;Extensible&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/header&gt;
+	&lt;section id="features-full" class="language-markup"&gt;
+		&lt;h1&gt;Full list of features&lt;/h1&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;strong&gt;Only 2KB&lt;/strong&gt; minified &amp; gzipped (core). Each language definition adds roughly 300-500 bytes.&lt;/li&gt;
+			&lt;li&gt;Very easy to extend without modifying the code, due to Prism’s &lt;a href="#plugins"&gt;plugin architecture&lt;/a&gt;. Multiple hooks are scattered throughout the source.&lt;/li&gt;
+			&lt;li&gt;Very easy to &lt;a href="extending.html#language-definitions"&gt;define new languages&lt;/a&gt;. Only thing you need is a good understanding of regular expressions&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/section&gt;
+	&lt;footer data-src="templates/footer.html" data-type="text/html"&gt;&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<pre><code class="language-javascript">var Token = _.Token = function(type, content, alias, matchedStr, greedy) {
+	this.type = type;
+	this.content = content;
+	this.alias = alias;
+	// Copy of the full string this token was created from
+	this.length = (matchedStr || "").length|0;
+	this.greedy = !!greedy;
+};</code></pre>
+
+<pre><code class="language-css">@import url(http://fonts.googleapis.com/css?family=Arvo);
+
+/* Styles */
+
+body {
+	font: 100%/1.5 Questrial, sans-serif;
+	tab-size: 4;
+	hyphens: auto;
+}
+
+a {
+	color: inherit;
+}
+
+section h1 {
+	font-size: 250%;
+}
+
+section h1,
+#features li strong,
+header h2,
+footer p {
+	font: 100% Rockwell, Arvo, serif;
+}</code></pre>
+
+<h2 id="lists">Lists</h2>
+<h3 id="unordered-lists">Unordered Lists</h3>
+
+<p>The HTML &lt;ul&gt; element represents an unordered list of items, typically rendered as a bulleted list.</p>
+
+<p>Usage notes:</p>
+<ul>
+  <li>The &lt;ul&gt; element is for grouping a collection of items that do not have a numerical ordering, and their order in the list is meaningless. Typically, unordered-list items are displayed with a bullet, which can be of several forms, like a dot, a circle or a squared.</li>
+  <li>There is no limitation to the depth and alternation of nested lists defined with the &lt;ol&gt; and &lt;ul&gt; elements.</li>
+  <li>The &lt;ol&gt; and &lt;ul&gt; elements both represent a list of items. They differ in that, with the &lt;ol&gt; element, the order is meaningful.</li>
+</ul>
+
+<h3 id="ordered-lists">Ordered Lists</h3>
+
+<p>The HTML &lt;ol&gt; element represents an ordered list of items, typically rendered as a numbered list.</p>
+
+<p>Usage notes:</p>
+<ol>
+  <li>Typically, ordered-list items are displayed with a preceding numbering, which can be of any form, like numerals, letters or Romans numerals or even simple bullets.</li>
+  <li>There is no limitation to the depth and alternation of nested lists defined with the &lt;ol&gt; and &lt;ul&gt; elements.</li>
+  <li>The &lt;ol&gt; and &lt;ul&gt; both represent a list of items. They differ in the way that, with the &lt;ol&gt; element, the order is meaningful.</li>
+</ol>
+
+<h2 id="footnotes">Footnotes</h2>
+
+<p>The quick brown fox<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> jumped over the lazy dog<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+
+<p>Footnotes are a great way to add additional contextual details when appropriate. Ghost will automatically add footnote content to the very end of your post.</p>
+
+<h2 id="tables">Tables</h2>
+
+<table>
+<caption>Table Caption</caption>
+<thead>
+<tr>
+   <th>Content categories</th>
+   <th>Flow content</th>
+  </tr>
+</thead>
+ <tbody>
+  <tr>
+   <td>Permitted content</td>
+   <td>
+    An optional <code>&lt;caption&gt;</code> element;<br />
+    zero or more <code>&lt;colgroup&gt;</code> elements;<br />
+    an optional <code>&lt;thead&gt;</code> element;<br />
+    an optional <code>&lt;tfoot&gt;</code> element;
+   </td>
+  </tr>
+  <tr>
+   <td>Tag omission</td>
+   <td>None, both the start tag and the end tag are mandatory</td>
+  </tr>
+  <tr>
+   <td>Permitted parent elements</td>
+   <td>Any element that accepts flow content</td>
+  </tr>
+  <tr>
+   <td>Normative document</td>
+   <td><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/tabular-data.html#the-table-element" rel="external nofollow">HTML5, section 4.9.1</a> (<a href="http://www.w3.org/TR/REC-html40/struct/tables.html#edef-TABLE">HTML4.01, section 11.2.1</a>)</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2 id="videos">Videos</h2>
+
+<iframe src="https://player.vimeo.com/video/137643135?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p><a href="https://vimeo.com/137643135">This Mountain</a> from <a href="https://vimeo.com/evanmann">Evan Mann / OWP Denver</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<h2 id="audio">Audio</h2>
+
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/165895349&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Foxes are red <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Dogs are usually not red <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+                </div>
+            </div><!-- .inner -->
+
+        </article><!-- .page-template -->
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->
+
+
+        
+
+        
+
+        <aside class="sidebar">
+	<div class="sidebar-scrollable">
+		<div class="inner">
+			<div class="widget-area">
+	
+				<nav class="site-navigation">
+					<h2>Explore Website</h2>
+					<ul class="menu">
+						
+							<li class="menu-item"><a href="https://ambellina.github.io/cherrybrook-mollymook">Great Ocean Road Trip 2013-14</a></li>
+						
+					</ul>
+				</nav>
+
+				
+<section class="widget widget-text">
+    <h2 class="widget-title">About My Journal</h2>
+    <p>The Amazing Adventures of Amber + Family</p>
+</section>
+
+
+<!-- Create a sorted array of tags -->
+ 
+<section class="widget widget-tags">
+    <h2 class="widget-title">Tags</h2>
+    <div class="tagcloud">
+        
+        <a class="button" href="https://ambellina.github.io/tag/great-ocean-road/">Great-Ocean-Road
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+    </div>
+</section>
+
+				
+			</div><!-- .widget-area -->
+			<a class="sidebar-toggle">
+				<span class="screen-reader-text">Close</span>
+				<span class="icon" aria-hidden="true"></span>
+			</a>
+		</div><!-- .inner -->
+	</div><!-- .sidebar-scrollable -->
+</aside><!-- .sidebar -->
+        <footer class="site-footer">
+    <div class="inner">
+
+        <div class="offsite-links">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    <a href="/rss/" class="circle" target="_blank">
+        <i class="icon-feed" aria-hidden="true"></i>
+        <span class="screen-reader-text">RSS</span>
+    </a>
+
+</div><!-- .offsite-links -->
+        <div class="site-info">
+            <a href="#">My Journal</a> &copy; 2026 . Powered by
+            <a target="_jeckyll" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
+
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+
+    </div><!-- .site -->
+
+    <!-- Javascript Assets -->
+    <script src="https://ambellina.github.io/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://ambellina.github.io/assets/js/plugins.js?v=202601131240100000"></script>
+    <script src="https://ambellina.github.io/assets/js/custom.js?v=202601131240100000"></script>
+
+    
+</body>
+
+</html>

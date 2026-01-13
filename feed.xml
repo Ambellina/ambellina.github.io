@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Journal</title>
+    <description>The Amazing Adventures of Amber + Family</description>
+    <link>https://ambellina.github.io</link>
+    <atom:link href="https://ambellina.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 13 Jan 2026 12:40:10 +0000</pubDate>
+    <lastBuildDate>Tue, 13 Jan 2026 12:40:10 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Day 12: Bega -&gt; Cherrybrook</title>
+        <description></description>
+        <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+        <link>https://ambellina.github.io/bega-cherrybrook</link>
+        <guid isPermaLink="true">https://ambellina.github.io/bega-cherrybrook</guid>
+        
+        <category>Great-Ocean-Road</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Day 11: Bairnsdale -&gt; Bega</title>
+        <description></description>
+        <pubDate>Thu, 02 Jan 2014 00:00:00 +0000</pubDate>
+        <link>https://ambellina.github.io/bairnsdale-bega</link>
+        <guid isPermaLink="true">https://ambellina.github.io/bairnsdale-bega</guid>
+        
+        <category>Great-Ocean-Road</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Day 10: Glen Waverley -&gt; Bairnsdale</title>
+        <description></description>
+        <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+        <link>https://ambellina.github.io/glenwaverley-bairnsdale</link>
+        <guid isPermaLink="true">https://ambellina.github.io/glenwaverley-bairnsdale</guid>
+        
+        <category>Great-Ocean-Road</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Day 9: Glen Waverley</title>
+        <description></description>
+        <pubDate>Tue, 31 Dec 2013 00:00:00 +0000</pubDate>
+        <link>https://ambellina.github.io/glenwaverley</link>
+        <guid isPermaLink="true">https://ambellina.github.io/glenwaverley</guid>
+        
+        <category>Great-Ocean-Road</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Day 8: Warrnambool -&gt; Glen Waverley</title>
+        <description></description>
+        <pubDate>Mon, 30 Dec 2013 00:00:00 +0000</pubDate>
+        <link>https://ambellina.github.io/warrnambool-glenwaverley</link>
+        <guid isPermaLink="true">https://ambellina.github.io/warrnambool-glenwaverley</guid>
+        
+        <category>Great-Ocean-Road</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Day 7: Colac -&gt; Warrnambool</title>
+        <description></description>
+        <pubDate>Sun, 29 Dec 2013 00:00:00 +0000</pubDate>
+        <link>https://ambellina.github.io/colac-warrnambool</link>
+        <guid isPermaLink="true">https://ambellina.github.io/colac-warrnambool</guid>
+        
+        <category>Great-Ocean-Road</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Day 6: Melbourne -&gt; Colac</title>
+        <description></description>
+        <pubDate>Sat, 28 Dec 2013 00:00:00 +0000</pubDate>
+        <link>https://ambellina.github.io/melbourne-colac</link>
+        <guid isPermaLink="true">https://ambellina.github.io/melbourne-colac</guid>
+        
+        <category>Great-Ocean-Road</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Day 5: Melbourne</title>
+        <description></description>
+        <pubDate>Fri, 27 Dec 2013 00:00:00 +0000</pubDate>
+        <link>https://ambellina.github.io/melbourne</link>
+        <guid isPermaLink="true">https://ambellina.github.io/melbourne</guid>
+        
+        <category>Great-Ocean-Road</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Day 4: Traralgon -&gt; Melbourne</title>
+        <description></description>
+        <pubDate>Thu, 26 Dec 2013 00:00:00 +0000</pubDate>
+        <link>https://ambellina.github.io/traralgon-melbourne</link>
+        <guid isPermaLink="true">https://ambellina.github.io/traralgon-melbourne</guid>
+        
+        <category>Great-Ocean-Road</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Day 3: Merimbula -&gt; Traralgon</title>
+        <description></description>
+        <pubDate>Wed, 25 Dec 2013 00:00:00 +0000</pubDate>
+        <link>https://ambellina.github.io/merimbula-traralgon</link>
+        <guid isPermaLink="true">https://ambellina.github.io/merimbula-traralgon</guid>
+        
+        <category>Great-Ocean-Road</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
