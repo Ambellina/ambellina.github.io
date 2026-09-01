@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://ambellina.github.io/Build-Week-08">
+    <title>Build Week 08 | My Journal</title>
+    <meta name="description" content="Mon 11 - Sun 17 May" />
+    <meta name="author" content="amber" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Build Week 08 | My Journal" />
+    <meta property="og:site_name" content="My Journal" />
+    <meta property="og:description" content="Mon 11 - Sun 17 May" />
+    <meta property="og:url" content="https://ambellina.github.io/Build-Week-08">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2026-05-17T00:00:00+00:00" />
+    <meta property="article:author" content="@">
+    <meta property="article:tags" content="tugrabakh">
+    <meta property="og:image" content="https://ambellina.github.io/assets/images/journal-images/tugrabakh/Build-Week-08/Cover.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="Build Week 08 | My Journal">
+    <meta name="twitter:description" content="Mon 11 - Sun 17 May">
+    <meta name="twitter:creator" content="@amber">
+    <meta name="twitter:site" content="@false">
+    <meta name="twitter:card"  content="summary_large_image">
+    <meta name="twitter:image" content="https://ambellina.github.io/assets/images/journal-images/tugrabakh/Build-Week-08/Cover.jpg">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "url": "https://ambellina.github.io/Build-Week-08",
+      "name": "Build Week 08",
+      "headline": "Build Week 08",
+      "keywords": "tugrabakh",
+      "description": "Mon 11 - Sun 17 May",
+      "datePublished": "2026-05-17 00:00:00 +0000",
+      "dateModified": "2026-05-17 00:00:00 +0000",
+      
+      
+      
+      
+      
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ambellina.github.io/Build-Week-08"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ambellina.github.io/assets/images/journal-images/tugrabakh/Build-Week-08/Cover.jpg"
+      }
+    }
+    </script>
+
+    
+    <!-- Site Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ambellina.github.io/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ambellina.github.io/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ambellina.github.io/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="https://ambellina.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://ambellina.github.io/assets/images/safari-pinned-tab.svg" color="#f66904">
+    <meta name="apple-mobile-web-app-title" content="peter.dolkens.me">
+    <meta name="application-name" content="peter.dolkens.me">
+    <meta name="msapplication-TileColor" content="#f66904">
+    <meta name="theme-color" content="#f66904">
+
+    <!-- Font Embed Code -->
+    <link href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic&display=swap" rel="stylesheet" type="text/css" />
+
+    <!-- CSS Styles -->
+    <link href="https://ambellina.github.io/assets/css/style.css?v=202609010610160000" rel="stylesheet">
+
+</head>
+
+<body class="home-template">
+
+    
+    <!-- Password Protection -->
+<style>
+    #password-overlay,
+    #share-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #1a1a2e;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Lato', sans-serif;
+    }
+    #share-overlay {
+        display: none; /* hidden until the share flow decides to show it */
+    }
+    #password-overlay .password-box,
+    #share-overlay .password-box {
+        background: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    #password-overlay h2,
+    #share-overlay h2 {
+        margin: 0 0 10px 0;
+        color: #333;
+        font-family: 'Playfair Display', serif;
+    }
+    #password-overlay p,
+    #share-overlay p {
+        color: #666;
+        margin: 0 0 25px 0;
+    }
+    #password-overlay input,
+    #share-overlay input {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 16px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        transition: border-color 0.2s;
+    }
+    #password-overlay input:focus,
+    #share-overlay input:focus {
+        outline: none;
+        border-color: #f66904;
+    }
+    #password-overlay button,
+    #share-overlay button {
+        background: #f66904;
+        color: #fff;
+        border: none;
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+    #password-overlay button:hover,
+    #share-overlay button:hover {
+        opacity: 0.9;
+    }
+    #password-overlay .error,
+    #share-overlay .error {
+        color: #e74c3c;
+        margin-top: 10px;
+        display: none;
+    }
+    .site-hidden {
+        display: none !important;
+    }
+    /* Shared (guest) view: keep post navigation, hide the menu and
+       any links that lead out of the shared post (logo/home + tags) */
+    body.shared-view .sidebar-toggle,
+    body.shared-view .sidebar,
+    body.shared-view .site-logo,
+    body.shared-view .site-title,
+    body.shared-view .tag-links {
+        display: none !important;
+    }
+</style>
+
+<div id="password-overlay">
+    <div class="password-box">
+        <h2>Welcome</h2>
+        <p>This site is password protected.</p>
+        <form id="password-form">
+            <input type="password" id="site-password" placeholder="Enter password" autocomplete="off" autofocus>
+            <button type="submit">Enter</button>
+            <p class="error" id="password-error">Incorrect password. Please try again.</p>
+        </form>
+    </div>
+</div>
+
+<div id="share-overlay">
+    <div class="password-box">
+        <h2>Welcome</h2>
+        <p>Please enter the username and password you were given.</p>
+        <form id="share-form">
+            <input type="text" id="share-username" placeholder="Username" autocomplete="off" autocapitalize="off" autocorrect="off">
+            <input type="password" id="share-password" placeholder="Password" autocomplete="off">
+            <button type="submit">Enter</button>
+            <p class="error" id="share-error">Incorrect username or password. Please try again.</p>
+        </form>
+    </div>
+</div>
+
+<script>
+(function() {
+    var SITE_PASSWORD  = 'cherry5Chipper';
+    var SHARE_USERNAME = 'Gerros';
+    var SHARE_PASSWORD = 'happyCows319';
+    var IS_SHAREABLE   = true;
+
+    var SITE_COOKIE  = 'site_authenticated';
+    var SHARE_COOKIE = 'share_authenticated';
+    var COOKIE_DAYS  = 30;
+    var DEBUG        = true;
+
+    function log(message) {
+        if (DEBUG) {
+            console.log('[Password Protection] ' + message);
+        }
+    }
+
+    function setCookie(name, value, days) {
+        var expires = '';
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = '; expires=' + date.toUTCString();
+        }
+        document.cookie = name + '=' + value + expires + '; path=/; SameSite=Strict';
+        log('Cookie set: ' + name + '=' + value + ', expires in ' + days + ' days');
+    }
+
+    function getCookie(name) {
+        var nameEQ = name + '=';
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var c = cookies[i].trim();
+            if (c.indexOf(nameEQ) === 0) {
+                var value = c.substring(nameEQ.length);
+                log('Cookie found: ' + name + '=' + value);
+                return value;
+            }
+        }
+        log('Cookie not found: ' + name);
+        return null;
+    }
+
+    // A guest link is anything with "share" in the query string, e.g. ?share
+    var shareRequested = location.search.toLowerCase().indexOf('share') !== -1;
+
+    log('Initializing password protection...');
+    log('Shareable post: ' + IS_SHAREABLE + ', share requested: ' + shareRequested);
+
+    function whenReady(fn) {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            fn();
+        }
+    }
+
+    // --- Access decisions -------------------------------------------------
+
+    // 1. Owner already authenticated -> full site, as normal.
+    if (getCookie(SITE_COOKIE) === 'true') {
+        log('Owner authenticated via cookie - granting full access');
+        document.getElementById('password-overlay').style.display = 'none';
+        return;
+    }
+
+    // 2. Guest already authenticated -> shared view on any shareable post.
+    if (getCookie(SHARE_COOKIE) === 'true' && IS_SHAREABLE) {
+        log('Guest authenticated via cookie - granting shared view');
+        document.getElementById('password-overlay').style.display = 'none';
+        whenReady(function() { document.body.classList.add('shared-view'); });
+        return;
+    }
+
+    // 3. Fresh guest arriving via a share link on a shareable post -> guest login.
+    if (IS_SHAREABLE && shareRequested && SHARE_USERNAME) {
+        log('Share link on a shareable post - showing guest login');
+        whenReady(initShareLogin);
+        return;
+    }
+
+    // 4. Everything else -> normal site password prompt.
+    log('No valid authentication found - showing site password prompt');
+    whenReady(initSiteLogin);
+
+    // --- Login handlers ---------------------------------------------------
+
+    function initSiteLogin() {
+        var pageEl = document.getElementById('page');
+        if (pageEl) { pageEl.classList.add('site-hidden'); }
+
+        document.getElementById('password-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var entered = document.getElementById('site-password').value;
+            log('Site password attempt - length: ' + entered.length);
+
+            if (entered === SITE_PASSWORD) {
+                log('Site password correct - granting access');
+                setCookie(SITE_COOKIE, 'true', COOKIE_DAYS);
+                document.getElementById('password-overlay').style.display = 'none';
+                if (pageEl) { pageEl.classList.remove('site-hidden'); }
+            } else {
+                log('Site password incorrect - access denied');
+                document.getElementById('password-error').style.display = 'block';
+                document.getElementById('site-password').value = '';
+                document.getElementById('site-password').focus();
+            }
+        });
+    }
+
+    function initShareLogin() {
+        document.getElementById('password-overlay').style.display = 'none';
+        var overlay = document.getElementById('share-overlay');
+        overlay.style.display = 'flex';
+
+        var pageEl = document.getElementById('page');
+        if (pageEl) { pageEl.classList.add('site-hidden'); }
+
+        document.getElementById('share-username').focus();
+
+        document.getElementById('share-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var u = document.getElementById('share-username').value;
+            var p = document.getElementById('share-password').value;
+            log('Guest login attempt for username: ' + u);
+
+            if (u === SHARE_USERNAME && p === SHARE_PASSWORD) {
+                log('Guest credentials correct - granting shared view');
+                setCookie(SHARE_COOKIE, 'true', COOKIE_DAYS);
+                overlay.style.display = 'none';
+                if (pageEl) { pageEl.classList.remove('site-hidden'); }
+                document.body.classList.add('shared-view');
+            } else {
+                log('Guest credentials incorrect - access denied');
+                document.getElementById('share-error').style.display = 'block';
+                document.getElementById('share-password').value = '';
+                document.getElementById('share-username').focus();
+            }
+        });
+    }
+})();
+</script>
+
+    
+
+    <div id="page" class="site">
+
+        
+        <header class="site-header">
+
+    
+    <h1 class="site-title" style="margin-top: 1em">
+      <a href="https://ambellina.github.io" rel="home">
+        <svg viewBox="0 0 100 100" height="4em" width="4em" style="float: left; margin-top: -1.1em">
+          <title></title>
+          <use xlink:href="https://ambellina.github.io/assets/images/branding.svg#logo" />
+        </svg>
+        My Journal
+      </a>
+    </h1>
+    
+
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->
+
+        
+        
+
+        
+
+
+
+
+
+
+<main class="site-main">
+    <div class="site-content">
+
+        <article class="post-template">
+
+            <header class="cover post-header">
+                <div class="cover-bg" style="background-image: url(https://ambellina.github.io/assets/images/journal-images/tugrabakh/Build-Week-08/Cover.jpg)">
+                </div>
+
+                
+                <a href="https://ambellina.github.io/Build-Week-07" class="arrow-left header-nav-arrow" title="Previous: Build Week 07">
+                    <span class="screen-reader-text">Previous Post</span>
+                </a>
+                
+
+                
+                <a href="https://ambellina.github.io/Build-Week-09" class="arrow-right header-nav-arrow" title="Next: Build Week 09">
+                    <span class="screen-reader-text">Next Post</span>
+                </a>
+                
+
+                <div class="cover-content">
+                    <div class="inner">
+                
+                        
+                        <div class="tag-links">
+                            
+                            <a href='https://ambellina.github.io/tag/tugrabakh/'>tugrabakh</a>
+                            
+                        </div><!-- .tag-links -->
+                        
+                
+                        <h1 class="post-title">Build Week 08</h1>
+
+                        
+                        <p class="post-excerpt">Mon 11 - Sun 17 May</p>
+                        
+
+                        <div class="post-meta">
+                            <span class="post-meta-wrap">
+                                
+                                
+                                
+                                
+
+                                <time class="published" datetime="2026-05-17">
+                                    May 17, 2026
+                                </time>
+                            </span>
+                        </div><!-- .post-meta -->
+                
+                        <a href="#" class="arrow-down"><span class="screen-reader-text">Scroll Down</span></a>
+                    </div><!-- .inner -->
+                </div><!-- .cover-content -->
+            </header><!-- .cover -->
+            
+    
+        
+    
+
+
+
+            <div class="inner">
+                <div class="post-content">
+                    <figure class="kg-card kg-image-card kg-image-inline kg-no-gallery" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Amber-Icon.jpg" alt="" />
+    
+    
+        <figcaption class="caption-text">Author: Amber</figcaption> 
+    
+</figure>
+
+<p>It was all happening at the site today!  So many different vehicles coming and going.  First was a plumber and a grey Hilux at about 6:50.  Then Lukas and a little truck arrived at 7:30 - they left about an hour later.</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 23%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/01.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 23%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/02.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 23%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/03.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 23%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/04.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>We finally had a sprinkling of rain!  The Willies were enjoying themselves.  At about 9:30, the plumber left and a black Holden Ute went up, but left about 5 mins later.  The plumber was back again about 10:15.</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/05.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/06.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>Now neighbour Pete had burnt off his paddock, the next step was seeding it via drone.</p>
+
+<figure class="kg-card kg-embed-card">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/w1XH7yYDBpk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    
+</figure>
+
+<p>Precision Pest Services were next to arrive, shortly after 11.  They left a bit under an hour later.  Lil Fish, our electrician Mick, arrived at about 1pm and Lukas arrived in a different truck at about quarter past.</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/07.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/08.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/09.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>Mick and his offsider came down to the shed and asked Pete to go up to the house site.  Along with Lukas, they had a chat about where some of the services were going.</p>
+
+<p>A white Ute went up at 1:37 and left about ten minutes later.  Pete later told me it was the concreter come to collect his forgotten lunchbox - Pete and I had spotted it on the weekend and joked that we should sneak a snack in it hehe</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 50%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/10.jpg" alt="" />
+    
+    
+</figure>
+
+<p>Mick left at about 2:20, and the grey hilux, the plumber and Lukas all left at about 3:10.  In total there were 9 different vehicles on site today!</p>
+
+<p>Pete and I headed up at about 4 to see the progress - the hydronic heating had started to go in, which looked pretty cool.  They had quite an elaborate system to mark it all out.</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/11.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/12.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/12b.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<hr />
+
+<p>The plumber and a grey Hilux (probably the plumber’s offsider) arrived at 6:50 on Tuesday, and left about 3 hours later.</p>
+
+<p>It was raining again today, which is good news for the newly-planted natives.</p>
+
+<p>A white Ute arrived at 11:20 and left about 5 mins later - not sure who that was, but we think it might have been the concreter.</p>
+
+<p>Pete bought a new toy off Nick.</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/NewToy.jpg" alt="" />
+    
+    
+</figure>
+
+<p>When we headed up to the house site for our afternoon sticky-beak, we saw that more pipes for the hydronic heating had gone in.</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/13.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/14.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/14b.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>We had a new email from Penny -</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/15.jpg" alt="" />
+    
+    
+</figure>
+
+<p>Bloody additional costs.  Bit annoying the engineers hadn’t included all the relevant detail the first time!</p>
+
+<p>Pete made a new moth friend -</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/Moth.jpg" alt="" />
+    
+    
+</figure>
+
+<hr />
+
+<p>Nobody on the building site on Wednesday.</p>
+
+<p>We had an early email from Kristy from the council -</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/16.jpg" alt="" />
+    
+    
+</figure>
+
+<p>That was lovely and generous, though part of me was a bit worried about having to plant and water another 30 shrubs when we were struggling to manage the ones we had already.  On the plus side, hopefully the ground would be a little softer after the recent rain.</p>
+
+<p>In other news, it turns out Todd from Viison <em>had</em> replied to our April email about cabinetry, but for some reason Pete’s email forwarding system hadn’t worked and we never saw it.  But things were progressing and he would likely send us a quote next week.</p>
+
+<p>Headed in to town - one of the benefits of being the driver now, is that Pete has to take the bins out, ner ner haha</p>
+
+<p>Went to the hardware store to get another extension cord.  Called Kristy to see if it was easier for her to meet us in town rather than coming to our place, but she said she was back at home now - she’d be back in to town later to pick up her kids and would come see us then.</p>
+
+<p>We headed home via Jacks Rd and saw some nice Autumn trees and cows.</p>
+
+<p>We stopped in to check on our natives and see how the ground was looking in preparation for the next planting.</p>
+
+<p>Back home, Pete did some work to staple some of the shed electrical cable to the roof so the birds wouldn’t be able to sit on it to poop on the Shark as much.</p>
+
+<p>Made my lunch and sat down to work, and shortly after saw a car driving away - oh no, I’d missed Kristy!  I hadn’t heard or seen her arrive and Pete thought I was just hiding!</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/17.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/18.gif" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/19.jpg" alt="" />
+    
+    
+        <figcaption class="caption-text">A nice selection!</figcaption> 
+    
+</figure>
+
+<hr />
+
+<p>At 3:30am Pete thinks we have a possum but I’m pretty sure it’s just another rat.  We had put poison out and the electric traps with new batteries, but still hear him running around sometimes.  OK Pete was right, it’s a possum!!  I got out of bed to have a look.</p>
+
+<figure class="kg-card kg-embed-card">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/txbvcSAh44U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    
+</figure>
+
+<p>We consulted the video cameras and he’d been drinking water from the watermelon and been up and down the tree a few times.  I couldn’t wait until we were best friends!</p>
+
+<p>No other visitors on Thurs morning, except some King Parrots eating our oranges before we’ve had a chance to!</p>
+
+<p>It poured just as we were planning to go plant the new shrubs.  So we spent some time trying to work out what to do about the meter boxes Pete wanted to order.  There were 3 but only 2 were currently in stock.  Delivery to us was something like $400 so we were looking at Cherrybrook or Mayfield as options.  But at least 1 item was quite heavy and would arrive on a pallet, which complicated things a bit.  Settled on Mayfield and we’ll try to co-ordinate to be there for the delivery and get it loaded straight into the Shark.</p>
+
+<p>By that time it was 2:30 and the sun was out again, so we were heading down to plant.  We got some things together and headed down to KoalaKorner in the Shark. I had some difficulty using the cameras to back through one of the gates as the pictures were a bit blurry / distorted.</p>
+
+<p>After a bit of debate about the best spot to plant (I thought we would be planting them amongst the other plants, but Pete thought better down closer to the water) we got to work.  Pete would drill holes, then we’d dig out the dirt, fill the hole with water, then plant.</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 37%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/KW01.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 20%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/KW02.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 37%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/KW03.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>We planted Osmanthus, Hibiscus Heterophyllus and Acacia Fimbriata.</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/KW04.jpg" alt="" />
+    
+    
+        <figcaption class="caption-text">Osmanthus</figcaption> 
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/KW05.jpg" alt="" />
+    
+    
+        <figcaption class="caption-text">Hibiscus Heterophyllus</figcaption> 
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/KW06.jpg" alt="" />
+    
+    
+        <figcaption class="caption-text">Acacia Fimbriata</figcaption> 
+    
+</figure>
+
+</div>
+
+<p>Unfortunately we only got 5 done before it started to rain and it looked like it would get heavy - so we packed up and headed home.  A couple of minutes later it absolutely chucked down.  An hour down, only 5 shrubs planted and 25 to go haha</p>
+
+<p>In the heavy rain, I noticed the pipe from the gutter to the tank was quite leaky - I think Pete tried to fix it later.</p>
+
+<p>Sometime in the afternoon, Pete got this excellent shot of a lady Chipper -</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/Chipper.jpg" alt="" />
+    
+    
+</figure>
+
+<p>More possum visits this evening!</p>
+
+<hr />
+
+<p>Just bird visitors on Friday.</p>
+
+<p>The passion fruit is flowering again - I thought it had been dying down for the winter.  The watermelons are looking good.</p>
+
+<p>Around 1:30 we headed into town.  Saw a package in the letterbox as we were heading out - the new dash cam!  Pete immediately started tearing into it and making a mess - at one point he accidentally tipped everything out on to the floor - not distracting at all!</p>
+
+<p>We headed up to the lookout to see the nice clouds and rainbow - no Huey today though.</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/20.jpg" alt="" />
+    
+    
+</figure>
+
+<p>From the lookout we saw a side road and thought we might be able to drive down to the river, but when we got there the entrance looked like someone’s property - though it’s a proper tarred road with a street sign so I feel like they’ve just been sneaky and put a fence with their name on it to stop people driving down there!  Looking on the map, the spot near the river that we were trying to get to is labelled “Old Bowman Farm Road - River public access” which definitely makes me think we should be able to access it.</p>
+
+<p>Headed over to Dangar Rd to see how the owner-builder was getting on - there didn’t seem like there had been much progress since last time.</p>
+
+<p>Stopped at Woolies and it was super busy and full of holidayers - not sure why!  We parked out of the way over on the grass and a guy with a trailer still nearly ran into us.  The expression on this doggo made us laugh -</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/BestDoggo.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/BestDoggo02.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>IGA next and ran into one of the young workers from Woolies and she high-fived us - I think she must think we’re younger than we are hehe</p>
+
+<p>Spotted some milk thistle weeds on the side of the IGA building and sneakily picked some to take home for the birds hehe</p>
+
+<p>On our way into town, a small blue plant pot had flown out the back of the Shark as we were driving down Bundook Rd - luckily we found it and collected it on the way back!</p>
+
+<p>Back home now - 3:30 and made some noodles for lunch and got back to work.</p>
+
+<p>Spotted some super creepy fog on dusk - we went for a putt to see what it looked like from the house site - pretty cool!</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/21.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-embed-card">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/0-CBOEpfIso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    
+</figure>
+
+<figure class="kg-card kg-embed-card">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/JH24vDwGmRo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    
+</figure>
+
+<hr />
+
+<p>On Saturday we had a Newcastle trip planned.  I got up a bit after 8.  I hadn’t slept very well and Pete hadn’t slept very long.  I was feeling OK but then my belly got stirred up and we couldn’t leave until about 9:45.</p>
+
+<p>First we visited Kevin at Choices Flooring in Heatherbrae after a recommendation from LMD.  We had a bit of a look around while he served a couple of ladies who were trying to get a deal on carpet because they were running some charity.  Pete and I were pretty agreed on what sort of flooring we’d like (Blackbutt - finally we agree on something haha) it’s just a matter of understanding what can work with our hydronic heating.  We’d been told we can’t have proper wood, but hopefully we can have engineered board.  Kevin wasn’t too sure but said he’d reach out to the manufacturers to get a better understanding and get back to us.  He very generously let us borrow the sample.</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/Flooring.jpg" alt="" />
+    
+    
+</figure>
+
+<p>Next we headed to the BYD dealer to pick up the floor mats - we weren’t too sure if we’d be able to get them as Pete originally got a text message saying it was fine, but we also had two emails - one saying it was fine, then one shortly after saying we’d have to go during the week -</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/22.jpg" alt="" />
+    
+    
+</figure>
+
+<p>We thought we’d chance our luck by just showing the favourable text message - we saw Thomas who had helped us with the Shark test drive, and he was happy to have a chat and have a look for us - luckily the mats had been set aside for us with an invoice already printed, so we made the payment and all was good, woohoo!</p>
+
+<p>Next we headed to Winnings to discuss kitchen appliances.  It was hard to find parking.  We drove around the block then found a carpark but the spots were too small so we kept looking out on the street.  I had to turn around in one of the streets, and when I was reversing I put my foot too hard on the accelerator and it shot back until I braked heavily - Pete reckons I left tyre marks! It was all very stressful and I was over it!  Electric vehicles accelerate faster than petrol cars because their electric motors deliver 100% of their maximum torque instantly from a dead stop - just something I still have to get a bit more used to.</p>
+
+<p>We met Keryn at Winnings and Pete took her through his wishlist so we could get some quotes together.  It was the first time I was hearing some of these numbers and I needed a lie down haha</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/23.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/24.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>On the plus side, at least delivery was free hahaha</p>
+
+<p>Next we headed to Beaumont St to get a schnitty wrap for lunch.  Then we drove over to Gerros - arrived about 2:30, ate lunch and caught up.  I got a surprise gift - a cute doggo pot!  Pete spent some time installing the new car mats, they looked pretty schmick.</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/SharkMat.jpg" alt="" />
+    
+    
+        <figcaption class="caption-text">This photo was taken after I'd dirtied them a bit :(</figcaption> 
+    
+</figure>
+
+<p>V&amp;B said they’ll visit for a couple of nights, in a couple of weeks once things have calmed down at home.  Liam joked that he’d visit on Wednesday so he could write his name in our freshly poured concrete haha</p>
+
+<p>Pete and I headed off for our next errands - petrol, Coles and Bunnings.  I was confused about why Pete was directing me to the Bunnings that was out of the way instead of the one on the way home, but as it turned out it was only about 13mins difference so not too bad.</p>
+
+<p>Pete bought a new drill bit for the auger, so we can drill bigger holes for the shrubs.  I had $200 cash from some money Mum had given me last year that I hadn’t got around to spending yet, and I wanted to get a few things for the garden.  Firstly some shears like Dad’s that I’d borrowed when they last visited.  Then a few herbs.  I’d collected a bunch of things then Pete got a price check done - $165.60 - we very carefully calculated the next items but somehow when we got to the till we were 18c over!  So embarrassing.  I was momentarily panicked because I thought I didn’t have any more money, but then I remembered we could just pay the rest on card haha but then I found another $5 so that worked out better.  We ended up with the shears, a 10-pack of snapdragon seedlings, a Fittonia plant, a Callisia Pink Panther, some Allium bulbs, 2 punnets of strawberries, cauliflower, coriander, parsley, rocket and 1 Chinese cabbage.</p>
+
+<p>Pete did a magic job fitting everything into one box and securing it in the back of the Shark.  While he was doing that, a man walked past and commented how good the Shark looks in orange hehe</p>
+
+<p>Got some KFC on the way home - a man in a Roosters shirt (top bloke) commented on Pete’s shorts.</p>
+
+<p>It was quite an eventful trip down the Bucketts - we saw a wallaby, some deer and a cat!</p>
+
+<p>Here is a time lapse of the dash cam footage from our trip -</p>
+
+<figure class="kg-card kg-embed-card">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/sW1TsVw90Vw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    
+</figure>
+
+<p>And here are my attempts at getting stills of the critters we saw hehe -</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/Dash01.png" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/Dash01b.png" alt="" />
+    
+    
+</figure>
+
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/Dash02.png" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/Dash02b.png" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>The dash cam isn’t quite right yet but Pete’s working on it.</p>
+
+<p>We thought we might see the possum when we got home, but Pete thinks he’d hiding in the roof because it’s been raining.  We later saw that he’d been playing Extreme Possum Warrior while we were out haha</p>
+
+<figure class="kg-card kg-embed-card">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/hdTvjKS_0JM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    
+</figure>
+
+<p>All the plants made it home OK, due to Pete’s expert boxing/strapping and my expert driving hahaha</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/Plants.jpg" alt="" />
+    
+    
+</figure>
+
+<hr />
+
+<p>On Sunday morning, I noticed some grass is finally shooting up in the dirt patches out the front - Pete had tried all sorts of things to get grass to grow there but we’d pretty much given up - not sure why it’s changed its mind now!</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/25.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/26.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>We prepared to plant some more of the shrubs.  Armed with Pete’s new auger bit, I was hopeful it was going to be a bit easier today at least.</p>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/27.jpg" alt="" />
+    
+    
+</figure>
+
+<p>I also realised it was a good opportunity to plant a few of the things that had been sitting on the porch for months because we didn’t know where to plant them.  I drove the buggy around so I could load them up and wouldn’t have to carry them to the Shark - win!</p>
+
+<p>I sat in the buggy while I waited for Pete to have his shower, and Willie sang me a song.</p>
+
+<figure class="kg-card kg-embed-card">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/qtAqreJPKSI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    
+</figure>
+
+<p>When Pete got out, we finished loading the Shark because I’d done a terrible job (forgot the little spade and the water) then headed down.</p>
+
+<p>Pete got the auger going and it was making a racket - a few moments later I spotted a big Blue Tongue Lizard running for his life, he must have wondered what the heck was happening haha poor fella.</p>
+
+<p>The new auger was much better at digging wider and deeper holes, yay.</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/28.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/29.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 31%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/29b.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>Pete stood on one of the plants I’d just planted :(</p>
+
+<p>We planted the Bottlebrush, the Gum and the Peach tree and most of the shrubs before we ran out of water.  One of the new shrubs was ‘Pultenea’ which Google tells me should have lovely yellow flowers.</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/30.jpg" alt="" />
+    
+    
+        <figcaption class="caption-text">The Pultenea.</figcaption> 
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/31.jpg" alt="" />
+    
+    
+        <figcaption class="caption-text">The poor little one that got stomped.</figcaption> 
+    
+</figure>
+
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/32.jpg" alt="" />
+    
+    
+        <figcaption class="caption-text">The Peach.</figcaption> 
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 48%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/33.jpg" alt="" />
+    
+    
+        <figcaption class="caption-text">The Gum V&amp;B had given us many months ago.</figcaption> 
+    
+</figure>
+
+</div>
+
+<p>We were a bit worried more of the shrubs would get trodden on - it was already hard to spot some of them in the growing grass - so we headed back to get some stakes.</p>
+
+<p>We swapped the Shark for the buggy and headed to see the cows for a bread treat - they all came over really close while I fed Bella and 240.  240 kept trying to stick my fingers in her nostril haha Faux40 tried to have a bit of bread but Bella wouldn’t share.  A lot of them were intrigued by the baguette and slobbered all over it but didn’t eat any.</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 53%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/34.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 42%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/35.jpg" alt="" />
+    
+    
+</figure>
+
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 39%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/36.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 57%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/37.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<figure class="kg-card kg-embed-card">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/Ze9f07KRRBs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    
+</figure>
+
+<figure class="kg-card kg-embed-card">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/seQk0rsH07Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    
+</figure>
+
+<p>We buggied over to the natives to put the stakes in - already we couldn’t find half of the things we’d just planted!  We didn’t have enough stakes for all of them so had to pick the most vulnerable.  I staked the plant that Pete trod on earlier, and somehow he still managed to tread on him again!!  He now has 3 stakes haha</p>
+
+<p>Next we headed down to see how the pumpkins were progressing.  They were mostly looking good, but it looks like something has been nibbling our best one!</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 12%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/38.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 22%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/39.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 22%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/40.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 22%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/41.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 12%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/42.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>There’s water flowing in the creek again, yay!  We’re still able to get across though.</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 35%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/43.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 61%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/43b.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>Back up at the house, we took out some of the dead cucumber and marigolds, and I planted the Chinese cabbage and the cauliflower in the beds.  Also planted 6 of the 10 snapdragon in various locations.</p>
+
+<p>I’d been excited to watch Eurovision and had decided not to go on social media for the day so I’d avoid any spoliers - but I made the mistake of checking work Slack in the morning and Pavel had posted the final scores, d’oh!  He was excited because Bulgaria had won for the first time ever.  We managed to get the BBC telecast working, but as it was 4hrs long we didn’t get through it all that night - only the first hour / 10 songs.  Delta did pretty good for the Aussies (I was never much of a fan but she has a pretty good voice to be fair).  There were lots of catchy songs.</p>
+
+<p>One time when I was coming back from the toilet, I almost stepped on a spider - it looked different and creepier than the usual hunstmen and wolf spiders so I called Pete to see.  He was concerned that it might be a funnelweb - he sprayed half a can of bug spray but it didn’t have much effect at first.  He headed out to the shed to get the vacuum cleaner while I kept an eye on spidey to make sure he didn’t get away.  Luckily he was starting to get a bit woozy now and Pete sucked him into the vacuum cleaner and taped the end so he couldn’t get out.  He’d previously taken a couple of photos of the spider and he now posted them to an indentification group on Facebook, so hopefully we’d find out if it was indeed a funnelweb.</p>
+
+<div data-gallery="">
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 20%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/Spidey01.jpg" alt="" />
+    
+    
+</figure>
+
+<figure class="kg-card kg-image-card kg-image-inline" style="display: inline-block; vertical-align: top; margin-right: 10px; width: 20%;">
+    
+    <img src="/assets/images/journal-images/tugrabakh/Build-Week-08/Spidey02.jpg" alt="" />
+    
+    
+</figure>
+
+</div>
+
+<p>As I was getting ready for bed, I wondered what to do with my slippers so spiders couldn’t crawl in them while I was asleep - I was worried about getting up for the bathroom in the middle of the night and getting a scary surprise.</p>
+
+
+                </div><!-- .post-content -->
+
+               
+
+                
+
+            </div><!-- .inner -->
+        </article>
+
+        
+
+
+
+
+
+
+<nav class="post-navigation">
+
+    <h2 class="screen-reader-text">Post navigation</h2>
+    <div class="nav-links">
+
+        
+        <a href="https://ambellina.github.io/Build-Week-07" class="nav-next">
+
+            
+            <div class="nav-bg" style="background-image: url(/assets/images/journal-images/tugrabakh/Build-Week-07/Cover.jpg)"></div>
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Previous</span>
+                <span class="nav-title">Build Week 07</span>
+                <span class="nav-date">May 10, 2026</span>
+            </div>
+
+        </a>
+        
+
+        
+        <a href="https://ambellina.github.io/Build-Week-09" class="nav-previous">
+
+            
+            <div class="nav-bg" style="background-image: url(/assets/images/journal-images/tugrabakh/Build-Week-09/Cover.jpg)"></div>
+            
+
+            <div class="nav-inside">
+                <span class="nav-before">Next</span>
+                <span class="nav-title">Build Week 09</span>
+                <span class="nav-date">May 24, 2026</span>
+            </div>
+
+        </a>
+        
+
+    </div><!-- .nav-links-->
+</nav><!-- .post-navigation -->
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->
+
+
+        
+
+        
+
+        <aside class="sidebar">
+	<div class="sidebar-scrollable">
+		<div class="inner">
+			<div class="widget-area">
+	
+				<nav class="site-navigation">
+					<h2>Explore Website</h2>
+					<ul class="menu">
+						
+							<li class="menu-item"><a href="https://ambellina.github.io/cherrybrook-mollymook">Great Ocean Road Trip 2013-14</a></li>
+						
+					</ul>
+				</nav>
+
+				
+<section class="widget widget-text">
+    <h2 class="widget-title">About My Journal</h2>
+    <p>The Amazing Adventures of Amber + Family</p>
+</section>
+
+
+<!-- Create a sorted array of tags -->
+ 
+<section class="widget widget-tags">
+    <h2 class="widget-title"><a href="https://ambellina.github.io/tags/">Tags</a></h2>
+    <div class="tagcloud">
+        
+        <a class="button" href="https://ambellina.github.io/tag/birthday-trip-2026/">Birthday-Trip-2026
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href="https://ambellina.github.io/tag/dad-70-bonanza/">Dad-70-Bonanza
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href="https://ambellina.github.io/tag/great-ocean-road/">Great-Ocean-Road
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href="https://ambellina.github.io/tag/mum-birthday-2026/">Mum-Birthday-2026
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href="https://ambellina.github.io/tag/valenversary/">Valenversary
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href="https://ambellina.github.io/tag/tugrabakh/">tugrabakh
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+    </div>
+</section>
+
+				
+			</div><!-- .widget-area -->
+			<a class="sidebar-toggle">
+				<span class="screen-reader-text">Close</span>
+				<span class="icon" aria-hidden="true"></span>
+			</a>
+		</div><!-- .inner -->
+	</div><!-- .sidebar-scrollable -->
+</aside><!-- .sidebar -->
+        <footer class="site-footer">
+    <div class="inner">
+
+        <div class="offsite-links">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    <a href="/rss/" class="circle" target="_blank">
+        <i class="icon-feed" aria-hidden="true"></i>
+        <span class="screen-reader-text">RSS</span>
+    </a>
+
+</div><!-- .offsite-links -->
+        <div class="site-info">
+            <a href="#">My Journal</a> &copy; 2026 . Powered by
+            <a target="_jeckyll" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
+
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+
+    </div><!-- .site -->
+
+    <!-- Javascript Assets -->
+    <script src="https://ambellina.github.io/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://ambellina.github.io/assets/js/plugins.js?v=202609010610160000"></script>
+    <script src="https://ambellina.github.io/assets/js/custom.js?v=202609010610160000"></script>
+
+    
+</body>
+
+</html>

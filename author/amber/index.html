@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://ambellina.github.io/author/amber/">
+    <title>Author Page | My Journal</title>
+    <meta name="description" content="The Amazing Adventures of Amber + Family" />
+    <meta name="author" content="amber" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Author Page | My Journal" />
+    <meta property="og:site_name" content="My Journal" />
+    <meta property="og:description" content="The Amazing Adventures of Amber + Family" />
+    <meta property="og:url" content="https://ambellina.github.io/author/amber/">
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="@">
+    <meta property="og:image" content="https://ambellina.github.io/assets/images/journal-images/MainCover.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="Author Page | My Journal">
+    <meta name="twitter:description" content="The Amazing Adventures of Amber + Family">
+    <meta name="twitter:creator" content="@amber">
+    <meta name="twitter:site" content="@false">
+    <meta name="twitter:card"  content="summary">
+    <meta name="twitter:image" content="https://ambellina.github.io/assets/images/journal-images/MainCover.jpg">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "url": "https://ambellina.github.io/author/amber/",
+      "name": "Author Page",
+      "headline": "Author Page",
+      "keywords": "",
+      "description": "The Amazing Adventures of Amber + Family",
+      
+      
+      
+      
+      
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ambellina.github.io/author/amber/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ambellina.github.io/assets/images/journal-images/MainCover.jpg"
+      }
+    }
+    </script>
+
+    
+    <!-- Site Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ambellina.github.io/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ambellina.github.io/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ambellina.github.io/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="https://ambellina.github.io/site.webmanifest">
+    <link rel="mask-icon" href="https://ambellina.github.io/assets/images/safari-pinned-tab.svg" color="#f66904">
+    <meta name="apple-mobile-web-app-title" content="peter.dolkens.me">
+    <meta name="application-name" content="peter.dolkens.me">
+    <meta name="msapplication-TileColor" content="#f66904">
+    <meta name="theme-color" content="#f66904">
+
+    <!-- Font Embed Code -->
+    <link href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic%7CPlayfair+Display:400,400italic,700,700italic&display=swap" rel="stylesheet" type="text/css" />
+
+    <!-- CSS Styles -->
+    <link href="https://ambellina.github.io/assets/css/style.css?v=202609010610160000" rel="stylesheet">
+
+</head>
+
+<body class="author-template">
+
+    
+    <!-- Password Protection -->
+<style>
+    #password-overlay,
+    #share-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #1a1a2e;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Lato', sans-serif;
+    }
+    #share-overlay {
+        display: none; /* hidden until the share flow decides to show it */
+    }
+    #password-overlay .password-box,
+    #share-overlay .password-box {
+        background: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    #password-overlay h2,
+    #share-overlay h2 {
+        margin: 0 0 10px 0;
+        color: #333;
+        font-family: 'Playfair Display', serif;
+    }
+    #password-overlay p,
+    #share-overlay p {
+        color: #666;
+        margin: 0 0 25px 0;
+    }
+    #password-overlay input,
+    #share-overlay input {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 16px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        transition: border-color 0.2s;
+    }
+    #password-overlay input:focus,
+    #share-overlay input:focus {
+        outline: none;
+        border-color: #f66904;
+    }
+    #password-overlay button,
+    #share-overlay button {
+        background: #f66904;
+        color: #fff;
+        border: none;
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+    #password-overlay button:hover,
+    #share-overlay button:hover {
+        opacity: 0.9;
+    }
+    #password-overlay .error,
+    #share-overlay .error {
+        color: #e74c3c;
+        margin-top: 10px;
+        display: none;
+    }
+    .site-hidden {
+        display: none !important;
+    }
+    /* Shared (guest) view: keep post navigation, hide the menu and
+       any links that lead out of the shared post (logo/home + tags) */
+    body.shared-view .sidebar-toggle,
+    body.shared-view .sidebar,
+    body.shared-view .site-logo,
+    body.shared-view .site-title,
+    body.shared-view .tag-links {
+        display: none !important;
+    }
+</style>
+
+<div id="password-overlay">
+    <div class="password-box">
+        <h2>Welcome</h2>
+        <p>This site is password protected.</p>
+        <form id="password-form">
+            <input type="password" id="site-password" placeholder="Enter password" autocomplete="off" autofocus>
+            <button type="submit">Enter</button>
+            <p class="error" id="password-error">Incorrect password. Please try again.</p>
+        </form>
+    </div>
+</div>
+
+<div id="share-overlay">
+    <div class="password-box">
+        <h2>Welcome</h2>
+        <p>Please enter the username and password you were given.</p>
+        <form id="share-form">
+            <input type="text" id="share-username" placeholder="Username" autocomplete="off" autocapitalize="off" autocorrect="off">
+            <input type="password" id="share-password" placeholder="Password" autocomplete="off">
+            <button type="submit">Enter</button>
+            <p class="error" id="share-error">Incorrect username or password. Please try again.</p>
+        </form>
+    </div>
+</div>
+
+<script>
+(function() {
+    var SITE_PASSWORD  = 'cherry5Chipper';
+    var SHARE_USERNAME = 'Gerros';
+    var SHARE_PASSWORD = 'happyCows319';
+    var IS_SHAREABLE   = false;
+
+    var SITE_COOKIE  = 'site_authenticated';
+    var SHARE_COOKIE = 'share_authenticated';
+    var COOKIE_DAYS  = 30;
+    var DEBUG        = true;
+
+    function log(message) {
+        if (DEBUG) {
+            console.log('[Password Protection] ' + message);
+        }
+    }
+
+    function setCookie(name, value, days) {
+        var expires = '';
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = '; expires=' + date.toUTCString();
+        }
+        document.cookie = name + '=' + value + expires + '; path=/; SameSite=Strict';
+        log('Cookie set: ' + name + '=' + value + ', expires in ' + days + ' days');
+    }
+
+    function getCookie(name) {
+        var nameEQ = name + '=';
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var c = cookies[i].trim();
+            if (c.indexOf(nameEQ) === 0) {
+                var value = c.substring(nameEQ.length);
+                log('Cookie found: ' + name + '=' + value);
+                return value;
+            }
+        }
+        log('Cookie not found: ' + name);
+        return null;
+    }
+
+    // A guest link is anything with "share" in the query string, e.g. ?share
+    var shareRequested = location.search.toLowerCase().indexOf('share') !== -1;
+
+    log('Initializing password protection...');
+    log('Shareable post: ' + IS_SHAREABLE + ', share requested: ' + shareRequested);
+
+    function whenReady(fn) {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            fn();
+        }
+    }
+
+    // --- Access decisions -------------------------------------------------
+
+    // 1. Owner already authenticated -> full site, as normal.
+    if (getCookie(SITE_COOKIE) === 'true') {
+        log('Owner authenticated via cookie - granting full access');
+        document.getElementById('password-overlay').style.display = 'none';
+        return;
+    }
+
+    // 2. Guest already authenticated -> shared view on any shareable post.
+    if (getCookie(SHARE_COOKIE) === 'true' && IS_SHAREABLE) {
+        log('Guest authenticated via cookie - granting shared view');
+        document.getElementById('password-overlay').style.display = 'none';
+        whenReady(function() { document.body.classList.add('shared-view'); });
+        return;
+    }
+
+    // 3. Fresh guest arriving via a share link on a shareable post -> guest login.
+    if (IS_SHAREABLE && shareRequested && SHARE_USERNAME) {
+        log('Share link on a shareable post - showing guest login');
+        whenReady(initShareLogin);
+        return;
+    }
+
+    // 4. Everything else -> normal site password prompt.
+    log('No valid authentication found - showing site password prompt');
+    whenReady(initSiteLogin);
+
+    // --- Login handlers ---------------------------------------------------
+
+    function initSiteLogin() {
+        var pageEl = document.getElementById('page');
+        if (pageEl) { pageEl.classList.add('site-hidden'); }
+
+        document.getElementById('password-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var entered = document.getElementById('site-password').value;
+            log('Site password attempt - length: ' + entered.length);
+
+            if (entered === SITE_PASSWORD) {
+                log('Site password correct - granting access');
+                setCookie(SITE_COOKIE, 'true', COOKIE_DAYS);
+                document.getElementById('password-overlay').style.display = 'none';
+                if (pageEl) { pageEl.classList.remove('site-hidden'); }
+            } else {
+                log('Site password incorrect - access denied');
+                document.getElementById('password-error').style.display = 'block';
+                document.getElementById('site-password').value = '';
+                document.getElementById('site-password').focus();
+            }
+        });
+    }
+
+    function initShareLogin() {
+        document.getElementById('password-overlay').style.display = 'none';
+        var overlay = document.getElementById('share-overlay');
+        overlay.style.display = 'flex';
+
+        var pageEl = document.getElementById('page');
+        if (pageEl) { pageEl.classList.add('site-hidden'); }
+
+        document.getElementById('share-username').focus();
+
+        document.getElementById('share-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var u = document.getElementById('share-username').value;
+            var p = document.getElementById('share-password').value;
+            log('Guest login attempt for username: ' + u);
+
+            if (u === SHARE_USERNAME && p === SHARE_PASSWORD) {
+                log('Guest credentials correct - granting shared view');
+                setCookie(SHARE_COOKIE, 'true', COOKIE_DAYS);
+                overlay.style.display = 'none';
+                if (pageEl) { pageEl.classList.remove('site-hidden'); }
+                document.body.classList.add('shared-view');
+            } else {
+                log('Guest credentials incorrect - access denied');
+                document.getElementById('share-error').style.display = 'block';
+                document.getElementById('share-password').value = '';
+                document.getElementById('share-username').focus();
+            }
+        });
+    }
+})();
+</script>
+
+    
+
+    <div id="page" class="site">
+
+        
+        <header class="site-header">
+
+    
+    <h1 class="site-title" style="margin-top: 1em">
+      <a href="https://ambellina.github.io" rel="home">
+        <svg viewBox="0 0 100 100" height="4em" width="4em" style="float: left; margin-top: -1.1em">
+          <title></title>
+          <use xlink:href="https://ambellina.github.io/assets/images/branding.svg#logo" />
+        </svg>
+        My Journal
+      </a>
+    </h1>
+    
+
+    <a class="sidebar-toggle">
+        <span class="screen-reader-text">Menu and Widgets</span>
+        <span class="icon" aria-hidden="true"></span>
+    </a>
+
+</header><!-- .site-header -->
+
+        
+        
+
+        <main class="site-main">
+    <div class="site-content">
+        
+        
+        
+        <!-- /author -->
+        <div class="post-list inner">
+            
+            
+            <article class="post">
+    <header class="post-header">
+        <div class="tag-links">
+            
+            <a href='https://ambellina.github.io/tag/tugrabakh/'>tugrabakh</a>
+            
+        </div>
+        <div class="post-header-wrap">
+            <h2 class="post-title">
+                <a href="https://ambellina.github.io/Build-Week-15" rel="bookmark">Build Week 15</a>
+            </h2>
+            <div class="post-meta">
+            
+                
+                
+                
+            
+                <time class="published" datetime="2026-07-05">July 5, 2026</time>
+            
+            </div><!-- .post-meta -->
+        </div><!-- .post-header-wrap -->
+    </header><!-- .post-header -->
+
+    <div class="post-content">
+        <p>Mon 29 Jun - Sun 5 Jul </p>
+        <div class="read-more">
+            <a class="button" href="https://ambellina.github.io/Build-Week-15">Read More
+                <span aria-hidden="true">
+                    <span class="line left"></span>
+                    <span class="line top"></span>
+                    <span class="line right"></span>
+                    <span class="line bottom"></span>
+                </span>
+            </a>
+        </div>
+    </div><!-- .post-content -->
+</article><!-- .post -->
+
+            
+            <article class="post">
+    <header class="post-header">
+        <div class="tag-links">
+            
+            <a href='https://ambellina.github.io/tag/tugrabakh/'>tugrabakh</a>
+            
+        </div>
+        <div class="post-header-wrap">
+            <h2 class="post-title">
+                <a href="https://ambellina.github.io/Build-Week-14" rel="bookmark">Build Week 14</a>
+            </h2>
+            <div class="post-meta">
+            
+                
+                
+                
+            
+                <time class="published" datetime="2026-06-28">June 28, 2026</time>
+            
+            </div><!-- .post-meta -->
+        </div><!-- .post-header-wrap -->
+    </header><!-- .post-header -->
+
+    <div class="post-content">
+        <p>Mon 22 - Sun 28 June </p>
+        <div class="read-more">
+            <a class="button" href="https://ambellina.github.io/Build-Week-14">Read More
+                <span aria-hidden="true">
+                    <span class="line left"></span>
+                    <span class="line top"></span>
+                    <span class="line right"></span>
+                    <span class="line bottom"></span>
+                </span>
+            </a>
+        </div>
+    </div><!-- .post-content -->
+</article><!-- .post -->
+
+            
+            <article class="post">
+    <header class="post-header">
+        <div class="tag-links">
+            
+            <a href='https://ambellina.github.io/tag/tugrabakh/'>tugrabakh</a>
+            
+        </div>
+        <div class="post-header-wrap">
+            <h2 class="post-title">
+                <a href="https://ambellina.github.io/Build-Week-13" rel="bookmark">Build Week 13</a>
+            </h2>
+            <div class="post-meta">
+            
+                
+                
+                
+            
+                <time class="published" datetime="2026-06-21">June 21, 2026</time>
+            
+            </div><!-- .post-meta -->
+        </div><!-- .post-header-wrap -->
+    </header><!-- .post-header -->
+
+    <div class="post-content">
+        <p>Mon 15 - Sun 21 June </p>
+        <div class="read-more">
+            <a class="button" href="https://ambellina.github.io/Build-Week-13">Read More
+                <span aria-hidden="true">
+                    <span class="line left"></span>
+                    <span class="line top"></span>
+                    <span class="line right"></span>
+                    <span class="line bottom"></span>
+                </span>
+            </a>
+        </div>
+    </div><!-- .post-content -->
+</article><!-- .post -->
+
+            
+            <article class="post">
+    <header class="post-header">
+        <div class="tag-links">
+            
+            <a href='https://ambellina.github.io/tag/tugrabakh/'>tugrabakh</a>
+            
+        </div>
+        <div class="post-header-wrap">
+            <h2 class="post-title">
+                <a href="https://ambellina.github.io/Build-Week-12" rel="bookmark">Build Week 12</a>
+            </h2>
+            <div class="post-meta">
+            
+                
+                
+                
+            
+                <time class="published" datetime="2026-06-14">June 14, 2026</time>
+            
+            </div><!-- .post-meta -->
+        </div><!-- .post-header-wrap -->
+    </header><!-- .post-header -->
+
+    <div class="post-content">
+        <p>Mon 8 - Sun 14 June </p>
+        <div class="read-more">
+            <a class="button" href="https://ambellina.github.io/Build-Week-12">Read More
+                <span aria-hidden="true">
+                    <span class="line left"></span>
+                    <span class="line top"></span>
+                    <span class="line right"></span>
+                    <span class="line bottom"></span>
+                </span>
+            </a>
+        </div>
+    </div><!-- .post-content -->
+</article><!-- .post -->
+
+            
+            <article class="post">
+    <header class="post-header">
+        <div class="tag-links">
+            
+            <a href='https://ambellina.github.io/tag/tugrabakh/'>tugrabakh</a>
+            
+        </div>
+        <div class="post-header-wrap">
+            <h2 class="post-title">
+                <a href="https://ambellina.github.io/Build-Week-11" rel="bookmark">Build Week 11</a>
+            </h2>
+            <div class="post-meta">
+            
+                
+                
+                
+            
+                <time class="published" datetime="2026-06-07">June 7, 2026</time>
+            
+            </div><!-- .post-meta -->
+        </div><!-- .post-header-wrap -->
+    </header><!-- .post-header -->
+
+    <div class="post-content">
+        <p>Mon 1 - Sun 7 June </p>
+        <div class="read-more">
+            <a class="button" href="https://ambellina.github.io/Build-Week-11">Read More
+                <span aria-hidden="true">
+                    <span class="line left"></span>
+                    <span class="line top"></span>
+                    <span class="line right"></span>
+                    <span class="line bottom"></span>
+                </span>
+            </a>
+        </div>
+    </div><!-- .post-content -->
+</article><!-- .post -->
+
+            
+            <article class="post">
+    <header class="post-header">
+        <div class="tag-links">
+            
+            <a href='https://ambellina.github.io/tag/tugrabakh/'>tugrabakh</a>
+            
+        </div>
+        <div class="post-header-wrap">
+            <h2 class="post-title">
+                <a href="https://ambellina.github.io/Build-Week-10" rel="bookmark">Build Week 10</a>
+            </h2>
+            <div class="post-meta">
+            
+                
+                
+                
+            
+                <time class="published" datetime="2026-05-31">May 31, 2026</time>
+            
+            </div><!-- .post-meta -->
+        </div><!-- .post-header-wrap -->
+    </header><!-- .post-header -->
+
+    <div class="post-content">
+        <p>Mon 25 - Sun 31 May </p>
+        <div class="read-more">
+            <a class="button" href="https://ambellina.github.io/Build-Week-10">Read More
+                <span aria-hidden="true">
+                    <span class="line left"></span>
+                    <span class="line top"></span>
+                    <span class="line right"></span>
+                    <span class="line bottom"></span>
+                </span>
+            </a>
+        </div>
+    </div><!-- .post-content -->
+</article><!-- .post -->
+
+            
+            <article class="post">
+    <header class="post-header">
+        <div class="tag-links">
+            
+            <a href='https://ambellina.github.io/tag/tugrabakh/'>tugrabakh</a>
+            
+        </div>
+        <div class="post-header-wrap">
+            <h2 class="post-title">
+                <a href="https://ambellina.github.io/Build-Week-09" rel="bookmark">Build Week 09</a>
+            </h2>
+            <div class="post-meta">
+            
+                
+                
+                
+            
+                <time class="published" datetime="2026-05-24">May 24, 2026</time>
+            
+            </div><!-- .post-meta -->
+        </div><!-- .post-header-wrap -->
+    </header><!-- .post-header -->
+
+    <div class="post-content">
+        <p>Mon 18 - Sun 24 May </p>
+        <div class="read-more">
+            <a class="button" href="https://ambellina.github.io/Build-Week-09">Read More
+                <span aria-hidden="true">
+                    <span class="line left"></span>
+                    <span class="line top"></span>
+                    <span class="line right"></span>
+                    <span class="line bottom"></span>
+                </span>
+            </a>
+        </div>
+    </div><!-- .post-content -->
+</article><!-- .post -->
+
+            
+            
+        </div><!-- .inner -->
+        <nav class="pagination">
+    <div class="inner">
+    
+    
+    <span class="page-number"> Page 1 of 6 </span>
+
+    
+    <a class="older-posts arrow-right" href="https://ambellina.github.io/author/amber/page2/"
+        title="Next Page"><span class="screen-reader-text">Older Posts</span></a>
+    
+    </div><!-- .inner -->
+</nav>
+
+    </div><!-- .site-content -->
+</main><!-- .site-main -->
+
+
+        
+        
+        
+
+        
+
+        <aside class="sidebar">
+	<div class="sidebar-scrollable">
+		<div class="inner">
+			<div class="widget-area">
+	
+				<nav class="site-navigation">
+					<h2>Explore Website</h2>
+					<ul class="menu">
+						
+							<li class="menu-item"><a href="https://ambellina.github.io/cherrybrook-mollymook">Great Ocean Road Trip 2013-14</a></li>
+						
+					</ul>
+				</nav>
+
+				
+<section class="widget widget-text">
+    <h2 class="widget-title">About My Journal</h2>
+    <p>The Amazing Adventures of Amber + Family</p>
+</section>
+
+
+<!-- Create a sorted array of tags -->
+ 
+<section class="widget widget-tags">
+    <h2 class="widget-title"><a href="https://ambellina.github.io/tags/">Tags</a></h2>
+    <div class="tagcloud">
+        
+        <a class="button" href="https://ambellina.github.io/tag/birthday-trip-2026/">Birthday-Trip-2026
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href="https://ambellina.github.io/tag/dad-70-bonanza/">Dad-70-Bonanza
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href="https://ambellina.github.io/tag/great-ocean-road/">Great-Ocean-Road
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href="https://ambellina.github.io/tag/mum-birthday-2026/">Mum-Birthday-2026
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href="https://ambellina.github.io/tag/valenversary/">Valenversary
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+        <a class="button" href="https://ambellina.github.io/tag/tugrabakh/">tugrabakh
+            <span aria-hidden="true">
+                <span class="line left"></span>
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+            </span>
+        </a>
+        
+    </div>
+</section>
+
+				
+			</div><!-- .widget-area -->
+			<a class="sidebar-toggle">
+				<span class="screen-reader-text">Close</span>
+				<span class="icon" aria-hidden="true"></span>
+			</a>
+		</div><!-- .inner -->
+	</div><!-- .sidebar-scrollable -->
+</aside><!-- .sidebar -->
+        <footer class="site-footer">
+    <div class="inner">
+
+        <div class="offsite-links">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    <a href="/rss/" class="circle" target="_blank">
+        <i class="icon-feed" aria-hidden="true"></i>
+        <span class="screen-reader-text">RSS</span>
+    </a>
+
+</div><!-- .offsite-links -->
+        <div class="site-info">
+            <a href="#">My Journal</a> &copy; 2026 . Powered by
+            <a target="_jeckyll" href="https://jekyllrb.com/">Jekyll</a>.
+        </div><!-- .site-info -->
+
+        <a href="#page" class="arrow-up" title="Back to Top"><span class="screen-reader-text">Back to the top</span></a>
+
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->
+
+    </div><!-- .site -->
+
+    <!-- Javascript Assets -->
+    <script src="https://ambellina.github.io/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://ambellina.github.io/assets/js/plugins.js?v=202609010610160000"></script>
+    <script src="https://ambellina.github.io/assets/js/custom.js?v=202609010610160000"></script>
+
+    
+</body>
+
+</html>
